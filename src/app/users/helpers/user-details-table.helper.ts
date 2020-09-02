@@ -19,7 +19,6 @@ export class UserDetailsTableHelper {
   }
 
   static getRowValueFromObject(object: {}, listNames: string[] = []): string {
-
     Object.values(object).forEach((column) => {
       if (typeof column === 'string') {
         listNames.push(column);
